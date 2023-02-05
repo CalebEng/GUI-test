@@ -36,13 +36,14 @@ public class GUI{
         //frames
         b_frame = new JFrame();
 
-        //icon
+        //getting the new icon for the frame
         path = new File("res\\Icon.png").getAbsolutePath() + "\\";
         try {
             b_frame.setIconImage(ImageIO.read(new File(path)));
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         //panels
         top_panel = new JPanel();
         bot_panel = new JPanel();
